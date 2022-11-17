@@ -1,13 +1,11 @@
-import React from 'react';
-const Logo = () => {
-    const appName = "Hayat's Pokedex";
+import React from "react";
+const Logo = (props) => {
+    // const appName = "Hayat's Pokedex";
+    console.log(props);
   return (
     <header>
-      <h1>Welcome to the {appName}</h1>
-      <img
-        src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
-        alt="pokedex image"
-      />
+      <h1>Welcome to the {props.appName}</h1>
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="pokedex" />
     </header>
   );
 };

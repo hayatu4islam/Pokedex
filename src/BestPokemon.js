@@ -1,6 +1,5 @@
 import React from "react";
-const BestPokemon = () => {
-    const abilities = ["Anticipation", "Adaptability", "Run-Away"];
+const BestPokemon = ({ abilities }) => {
   return (
     <div>
       <p>My Favorite Pokemon is Squirtle</p>
@@ -9,7 +8,8 @@ const BestPokemon = () => {
             return (
                 <li key={index}>{ability}</li>
             );
-        })}
+        }
+        )}
       </ul>
     </div>
   );
