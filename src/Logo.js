@@ -1,7 +1,7 @@
 import React from "react";
 const Logo = (props) => {
     function logWhenClicked() {
-      console.log("Click event successful");
+      console.log("Pokedex picture is clicked");
     }
     console.log(props);
   return (
